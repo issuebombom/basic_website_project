@@ -1,4 +1,7 @@
 # Javascript 와 Flask를 활용한 미니 웹개발 프로젝트 정리
+
+![Alt text](deploy/static/images/result.png)
+
 ## 프로젝트 목표
 최신 영화 목록에 대해 별점과 코멘트를 등록할 수 있고, 각 영화마다 현재까지 달린 코멘트를 확인할 수 있다.
 
@@ -47,7 +50,7 @@ for tag in soup.select(".item_poster"):
 결국 header에서 authorization을 기입하고 나서 200이 출력되었다.
 특정 GET 요청에 있어 authorization도 요구될 수 있다는 점을 알게되었다.  
 하지만 authorization의 value가 정기적으로 바뀌므로 이에 따른 코드 수정이 필요하다.
-```python 
+```python
 def get_post_id(movie_id):
     """movie_id를 입력하면 해당 영화의 코멘트 post_id를 출력
 
@@ -61,7 +64,7 @@ def get_post_id(movie_id):
     url = f"https://comment.daum.net/apis/v1/ui/single/main/@{movie_id}"
     params = {"version": "v3.23.0"}
     headers = {
-        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb3J1bV9rZXkiOiJtb3ZpZS1yYXRpbmciLCJ1c2VyX3ZpZXciOnsiaWQiOjk1MzM0Mjg0LCJpY29uIjoiaHR0cHM6Ly90MS5kYXVtY2RuLm5ldC9wcm9maWxlL1FIdXNsY21oOFF3MCIsInByb3ZpZGVySWQiOiJEQVVNIiwiZGlzcGxheU5hbWUiOiLrsJXrr7zsmIEifSwiZ3JhbnRfdHlwZSI6ImFsZXhfY3JlZGVudGlhbHMiLCJzY29wZSI6W10sImV4cCI6MTY4MzY1MzkzOSwiYXV0aG9yaXRpZXMiOlsiUk9MRV9JTlRFR1JBVEVEIiwiUk9MRV9EQVVNIiwiUk9MRV9JREVOVElGSUVEIiwiUk9MRV9VU0VSIl0sImp0aSI6Ijk4NzYzYjNjLWEwMDEtNDY1YS04NWFhLTFhMDhjYTEzODEzNiIsImZvcnVtX2lkIjo1MywiY2xpZW50X2lkIjoiNUJvOFhmNWV6WjF0MzgzcFBHTVFMOTJpIn0.tdQ9b646Er5NKHTGoFgx0kJxJMBKrPxYj-YNpnP10l0",
+        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.....",
         "referer": "https://movie.daum.net/",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
     }
