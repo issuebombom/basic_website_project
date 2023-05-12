@@ -1,0 +1,55 @@
+* {
+  font-family: "Noto Serif KR", serif;
+}
+
+.mypic {
+  width: 100%;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg");
+  background-position: center 30%;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  float: left;
+  align-items: left;
+  justify-content: center;
+
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.avg-star {
+  margin-top: 20px;
+}
+
+.content {
+  width: 60%;
+}
+
+.mycards {
+  width: 95%;
+  /* max-width: 500px; */
+  margin: auto;
+}
+
+.mycards>.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  padding: 50px 20px 30px 20px;
+}
