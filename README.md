@@ -77,7 +77,7 @@ def get_post_id(movie_id):
 ```
 
 ### MongoDB 연결 이슈
-`IP Address가 변경될 경우 Atlas에 접속하여 Current IP Address를 추가해줘야 정상적으로 작동한다는 것을 알았다.  
+`IP Address가 변경될 경우 Atlas에 접속하여 Current IP Address를 추가해줘야 정상적으로 작동한다는 것을 알았다.`  
 개인적으로 가정 와이파이를 사용하다가 휴대폰 테더링으로 변경했더니 `ServerSelectionTimeoutError`가 발생했다.  
 이를 통해 MongoDB에서 사전에 등록된 IP Address에게 접속 권한을 허용한다는 것을 알 수 있었다.
 
