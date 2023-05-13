@@ -6,10 +6,10 @@ import re
 
 # mongoDB client 정보
 client = MongoClient(
-    "mongodb+srv://issuebombom:test@testcluster.bcnelb9.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://<projectname>:<username>@testcluster.bcnelb9.mongodb.net/?retryWrites=true&w=majority"
 )
 db = client.dbspartaproject01
-AUTH = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb3J1bV9rZXkiOiJtb3ZpZS1yYXRpbmciLCJ1c2VyX3ZpZXciOnsiaWQiOjk1MzM0Mjg0LCJpY29uIjoiaHR0cHM6Ly90MS5kYXVtY2RuLm5ldC9wcm9maWxlL1FIdXNsY21oOFF3MCIsInByb3ZpZGVySWQiOiJEQVVNIiwiZGlzcGxheU5hbWUiOiLrsJXrr7zsmIEifSwiZ3JhbnRfdHlwZSI6ImFsZXhfY3JlZGVudGlhbHMiLCJzY29wZSI6W10sImV4cCI6MTY4Mzg0OTkzMywiYXV0aG9yaXRpZXMiOlsiUk9MRV9JTlRFR1JBVEVEIiwiUk9MRV9EQVVNIiwiUk9MRV9JREVOVElGSUVEIiwiUk9MRV9VU0VSIl0sImp0aSI6ImM4M2UyNmJmLTlmZWEtNDkwOS1hOGJhLTM1YjM4YzA1ZmFkMiIsImZvcnVtX2lkIjo1MywiY2xpZW50X2lkIjoiNUJvOFhmNWV6WjF0MzgzcFBHTVFMOTJpIn0.9TfKAp2kEbF3KA0CgvPTz9hTzS7GuBSbbg_VknHS80E"
+AUTH = "Bearer ..."
 
 
 def get_post_id(movie_id, auth):
