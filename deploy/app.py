@@ -3,7 +3,7 @@ from pymongo import MongoClient, DESCENDING
 from datetime import datetime
 
 client = MongoClient(
-    "mongodb+srv://issuebombom:test@testcluster.bcnelb9.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://<projectname>:<username>@testcluster.bcnelb9.mongodb.net/?retryWrites=true&w=majority"
 )
 db = client.dbspartaproject01
 
